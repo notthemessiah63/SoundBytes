@@ -6,7 +6,7 @@ soundManager.setup({
         var themeSound = soundManager.createSound({
           id: 'theme',
           url: 'audiofiles/StarTrekTheme.mp3',
-          volume: 20,
+          volume: 40,
       });
       themeSound.play();
     })
@@ -21,12 +21,12 @@ soundManager.setup({
     })
     //----------------------------------
 
-    $('#bones').mouseover(function(){
-        var borgSound = soundManager.createSound({
-          id: 'bonesSound',
-          url: 'audiofiles/bones.mp3',
+    $('#bones').on('click', function(){
+        var bonesSound = soundManager.createSound({
+          id: 'bones2Sound',
+          url: 'audiofiles/bones2.mp3',
       });
-      borgSound.play();
+      bonesSound.play();
     })
     //---------------------------------
     $('#scotty').on('click', function(){
@@ -55,22 +55,49 @@ soundManager.setup({
       kirkSound.play();
     })
     //---------------------------------
-    $('#bones').on('click', function(){
-        var bones2Sound = soundManager.createSound({
-          id: 'bones2Sound',
-          url: 'audiofiles/bones2.mp3',
-          volume: 100,
-      });
-      bones2Sound.play();
-    })
-    //---------------------------------
-    $('#checkov').on('click', function(){
+    $('#kirk2').on('click', function(){
         var kirk2Sound = soundManager.createSound({
           id: 'kirk2Sound',
           url: 'audiofiles/kirk2.mp3',
           volume: 100,
       });
       kirk2Sound.play();
+    })
+    //---------------------------------
+    $('#cf-enterprise').on('click', function(){
+        var klingonSound = soundManager.createSound({
+          id: 'klingonSound',
+          url: 'audiofiles/klingonweapon.mp3',
+          volume: 100,
+      });
+      klingonSound.play();
+    })
+    //---------------------------------
+    $('#checkov').on('click', function(){
+        var scotty2Sound = soundManager.createSound({
+          id: 'scotty2Sound',
+          url: 'audiofiles/scotty2.mp3',
+          volume: 100,
+      });
+      scotty2Sound.play();
+    })
+    //---------------------------------
+    $('#ahura').on('click', function(){
+        var ahuraSound = soundManager.createSound({
+          id: 'ahuraSound',
+          url: 'audiofiles/unabletocomply.mp3',
+          volume: 100,
+      });
+      ahuraSound.play();
+    })
+    //---------------------------------
+    $('#medic').on('click', function(){
+        var medicSound = soundManager.createSound({
+          id: 'destructSound',
+          url: 'audiofiles/autodestruct.mp3',
+          volume: 100,
+      });
+      medicSound.play();
     })
     //---------------------------------
   },

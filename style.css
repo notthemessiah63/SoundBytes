@@ -15,11 +15,40 @@
 }
 
 #toprow {
+    display:inline-block;
+    vertical-align: top;
     margin-top:60px;
     margin-left:40px;
 }
 
 #botrow {
-    margin-top:280px;
-    margin-left:540px;
+    display: inline-block;
+    margin-top:100px;
+    margin-left:340px;
 }
+
+/*/---- enterprise image ---*/
+#cf-enterprise {
+  position:relative;
+  display: inline-block;
+  vertical-align: top;
+  height:281px;
+  width:450px;
+  margin:100px;
+}
+
+#cf-enterprise img {
+  position:absolute;
+  vertical-align: top;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf-enterprise img.top-ent:hover {
+    vertical-align: top;
+    opacity:0;
+}
+/*/--- end of enterprise image -------*/
