@@ -1,0 +1,25 @@
+/*centre the box*/
+.body {
+  background-color: black;
+  background-image: url(StarTrekImage.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.top {
+    margin: 10px;
+}
+.bot {
+    margin: 10px;
+}
+
+#toprow {
+    margin-top:60px;
+    margin-left:40px;
+}
+
+#botrow {
+    margin-top:280px;
+    margin-left:540px;
+}
