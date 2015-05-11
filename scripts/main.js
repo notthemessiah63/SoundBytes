@@ -64,7 +64,16 @@ soundManager.setup({
       kirk2Sound.play();
     })
     //---------------------------------
-    $('#cf-enterprise').on('click', function(){
+    $('#cloak').on('mouseover', function(){
+        var decloakSound = soundManager.createSound({
+          id: 'decloak',
+          url: 'audiofiles/decloak.mp3',
+          volume: 100,
+      });
+      decloakSound.play();
+    })
+    //----
+        $('#cf-enterprise').on('click', function(){
         var klingonSound = soundManager.createSound({
           id: 'klingonSound',
           url: 'audiofiles/klingonweapon.mp3',

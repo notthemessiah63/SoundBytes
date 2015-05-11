@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   height: 800px;
 }
+p {
+  display:inline-block;
+}
 
 .top {
     margin: 10px;
@@ -17,13 +20,13 @@
 #toprow {
     display:inline-block;
     vertical-align: top;
-    margin-top:60px;
+    margin-top:40px;
     margin-left:40px;
 }
 
 #botrow {
     display: inline-block;
-    margin-top:100px;
+    margin-top:70px;
     margin-left:340px;
 }
 
@@ -39,6 +42,7 @@
 
 #cf-enterprise img {
   position:absolute;
+  display: inline-block;
   vertical-align: top;
   left:0;
   -webkit-transition: opacity 1s ease-in-out;
@@ -48,6 +52,7 @@
 }
 
 #cf-enterprise img.top-ent:hover {
+    display: inline-block;
     vertical-align: top;
     opacity:0;
 }
